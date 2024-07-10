@@ -55,9 +55,9 @@ section {
 audio,
 canvas,
 video {
-  display: inline-block;
-  *display: inline;
-  *zoom: 1;
+  // display: inline-block;
+  // *display: inline;
+  // *zoom: 1;
 }
 
 /* Prevents modern browsers from displaying 'audio' without controls */
