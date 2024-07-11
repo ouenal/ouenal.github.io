@@ -1,0 +1,171 @@
+---
+layout: empty
+title: "Bayesian Self-Training for Semi-Supervised 3D Segmentation"
+permalink: /bst/
+author_profile: false
+---
+
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Bayesian Self-Training for Semi-Supervised 3D Segmentation</title>
+  <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico" />
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+  rel="stylesheet">
+
+  <link rel="stylesheet" href="/assets/css/bulma.min.css">
+  <link rel="stylesheet" href="/assets/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="/assets/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="/assets/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="/assets/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="/assets/js/fontawesome.all.min.js"></script>
+  <script src="/assets/js/bulma-carousel.min.js"></script>
+  <script src="/assets/js/bulma-slider.min.js"></script>
+  <script src="/assets/js/index.js"></script>
+</head>
+
+<body>
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">Bayesian Self-Training for Semi-Supervised 3D Segmentation</h1>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="https://ouenal.github.io/" target="_blank">
+                Ozan Unal
+              </a><sup>1,2</sup> &nbsp;
+              Christos Sakaridis<sup>1</sup> &nbsp;
+              Luc Van Gool<sup>1,3,4</sup>
+            </span>
+          </div>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <sup>1</sup>ETH Zurich &nbsp;
+              <sup>2</sup>Huawei Technologies &nbsp;
+              <sup>3</sup>KU Leuven &nbsp;
+              <sup>4</sup>INSAIT
+              <br>
+              ECCV 2024
+            </span>
+          </div>
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF link -->
+              <!-- <span class="link-block">
+                <a href="" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span> -->
+              <!-- Supplementary PDF link -->
+              <!-- <span class="link-block">
+                <a href="" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Supplementary</span>
+                </a>
+              </span> -->
+              <!-- Github link -->
+              <!-- <span class="link-block">
+                <a href="https://github.com/ouenal/concretenet" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                </a>
+              </span> -->
+              <!-- ArXiv Link -->
+              <!-- <span class="link-block">
+                <a href="" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Paper abstract -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p> 3D segmentation is a core problem in computer vision and, similarly to many other dense prediction tasks, it requires large amounts of annotated data for adequate training. However, densely labeling 3D point clouds to employ fully-supervised training remains too labor intensive and expensive. Semi-supervised training provides a more practical alternative, where only a small set of labeled data is given, accompanied by a larger unlabeled set. This area thus studies the effective use of unlabeled data to reduce the performance gap that arises due to the lack of annotations. In this work, inspired by Bayesian deep learning, we first propose a Bayesian self-training framework for semi-supervised 3D semantic segmentation. Employing stochastic inference, we generate an initial set of pseudo-labels and then filter these based on estimated point-wise uncertainty. By constructing a heuristic $n$-partite matching algorithm, we extend the method to semi-supervised 3D instance segmentation, and finally, with the same building blocks, to dense 3D visual grounding. We demonstrate state-of-the-art results for our semi-supervised method on SemanticKITTI and ScribbleKITTI for 3D semantic segmentation and on ScanNet and S3DIS for 3D instance segmentation. We further achieve substantial improvements in dense 3D visual grounding over supervised-only baselines on ScanRefer. </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Image -->
+<section class="section hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop has-text-centered">
+      <div class="item is-centered">
+        <h2 class="title is-3">Bayesian Self-Training</h2>
+        <img src="/images/bst/teaser.png" alt="BST Teaser"/>
+        <h2 class="content has-text-justified">
+          <p> Our Bayesian pseudo-labeling pipeline is built for 3D semantic segmentation, 3D instance segmentation and dense 3D visual grounding. With only slight adjustments, using the same building blocks, our method can be adapted to each of these tasks to achieve SOTA results. </p> 
+        </h2>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--BibTex citation -->
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>
+      @InProceedings{unal2024bayesian,
+      author = {Unal, Ozan and Sakaridis, Christos and Van Gool, Luc},
+      title = {Bayesian Self-Training for Semi-Supervised 3D Segmentation},
+      booktitle = {European Conference on Computer Vision (ECCV)},
+      month = {October},
+      year = {2024}
+      }
+    </code></pre>
+  </div>
+</section>
+
+<!-- Paper Footer -->
+<footer class="footer">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column">
+        <div class="content has-text-justified">
+          <p><small><small>
+            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+            You are free to borrow the of this website, we just ask that you link back to this page in the footer. This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </small></small></p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+</body>
+</html>

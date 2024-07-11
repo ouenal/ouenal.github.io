@@ -22,15 +22,16 @@ News
 Selected Publications
 ======
 
-Ozan Unal, Dengxin Dai, and Luc Van Gool. "Scribble-supervised lidar semantic segmentation." CVPR 2022 (ORAL).
-<a href="{{ base_path }}/scribblekitti/" rel="permalink" style="text-decoration: none; color: rgb(19, 82, 39);"><i>Project page.</i></a>
+{% include base_path %}
 
-Ozan Unal, Dengxin Dai, Ali Tamer Unal, and Luc Van Gool. "Discwise Active Learning for LiDAR Semantic Segmentation." RA-L 2023 (Best Paper Award - Honorable Mention).
-<a href="{{ base_path }}/dial/" rel="permalink" style="text-decoration: none; color: rgb(19, 82, 39);"><i>Project page.</i></a>
+{% assign post = site.publications[6] %}
+  {% include archive-single.html %}
 
-Ozan Unal, Christos Sakaridis, and Luc Van Gool. "Bayesian Self-Training for Semi-Supervised 3D Segmentation." ECCV 2024.
-<a href="{{ base_path }}/bayesian/" rel="permalink" style="text-decoration: none; color: rgb(19, 82, 39);"><i>Project page.</i></a>
+{% assign post = site.publications[7] %}
+  {% include archive-single.html %}
 
-Ozan Unal, Christos Sakaridis, Suman Saha, and Luc Van Gool. "Four Ways to Improve Verbo-visual Fusion for Dense 3D Visual Grounding." ECCV 2024.
-<a href="{{ base_path }}/concretenet/" rel="permalink" style="text-decoration: none; color: rgb(19, 82, 39);"><i>Project page.</i></a>
+{% assign post = site.publications[10] %}
+  {% include archive-single.html %}
 
+{% assign post = site.publications[11] %}
+  {% include archive-single.html %}
