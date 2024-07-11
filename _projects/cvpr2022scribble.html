@@ -10,7 +10,7 @@ author_profile: false
 <head>
   <meta charset="utf-8">
   <title>Scribble-Supervised LiDAR Semantic Segmentation</title>
-  <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico" />
+  <link rel="icon" href="/images/favicon.ico">
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
   rel="stylesheet">
 
@@ -32,6 +32,42 @@ author_profile: false
 
 
 <body>
+
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+  <div class="navbar-menu">
+    <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
+      <a class="navbar-item" href="https://ouenal.github.io">
+        <span class="icon">
+            <i class="fas fa-home"></i>
+        </span>
+      </a>
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link">
+          Related Research
+        </a>
+        <div class="navbar-dropdown">
+          <a class="navbar-item" href="https://ouenal.github.io/bst/">
+            Bayesian Self-Training for Semi-Supervised 3D Segmentation
+          </a>
+          <a class="navbar-item" href="https://ouenal.github.io/publications/07_ral2023discwise/">
+            Discwise Active Learning for LiDAR Semantic Segmentation
+          </a>
+          <a class="navbar-item" href="https://ouenal.github.io/publications/09_wacv2024feature/">
+            2D Feature Distillation for Weakly- and Semi-Supervised 3D Semantic Segmentation
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+
 <section class="hero">
   <div class="hero-body">
     <div class="container is-max-desktop">
@@ -100,10 +136,10 @@ author_profile: false
               </span>
               <!-- Dataset link -->
               <span class="link-block">
-                <a href="https://github.com/ouenal/scribblekitti" target="_blank"
+                <a href="https://data.vision.ee.ethz.ch/ouenal/scribblekitti/scribblekitti.zip" target="_blank"
                     class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
-                    <i class="fab fa-database"></i>
+                    <i class="fas fa-download"></i>
                   </span>
                   <span>Dataset</span>
                 </a>
@@ -140,7 +176,7 @@ author_profile: false
 </section>
 
 <!-- Youtube video -->
-<section class="hero is-small is-light">
+<section class="section hero is-light">
   <div class="hero-body">
     <div class="container is-max-desktop has-text-centered">
       <h2 class="title is-3">Video</h2>
@@ -148,6 +184,18 @@ author_profile: false
         <div class="publication-video">
           <iframe src="https://www.youtube.com/embed/vlYmqml2svs?si=OviQq92Cy8L5kByQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
         </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Poster -->
+<section class="section hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop has-text-centered">
+      <div class="item is-centered">
+        <h2 class="title is-3">Poster</h2>
+        <img src="/images/scribblekitti/poster.png" alt="ScribbleKITTI Poster"/>
       </div>
     </div>
   </div>

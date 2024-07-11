@@ -31,7 +31,7 @@ author_profile: true
             <div class="column has-text-centered">
                 <div class="publication-links">
                     <span class="link-block">
-                        <a href="https://arxiv.org/abs/2309.04561" target="_blank"
+                        <a href="https://ieeexplore.ieee.org/abstract/document/9681305/" target="_blank"
                         class="external-link button is-normal is-rounded is-dark">
                             <span>Paper</span>
                         </a>

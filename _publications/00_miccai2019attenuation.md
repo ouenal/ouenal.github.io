@@ -33,7 +33,7 @@ author_profile: true
             <div class="column has-text-centered">
                 <div class="publication-links">
                     <span class="link-block">
-                        <a href="https://arxiv.org/abs/2309.04561" target="_blank"
+                        <a href="https://link.springer.com/chapter/10.1007/978-3-030-32254-0_67" target="_blank"
                         class="external-link button is-normal is-rounded is-dark">
                             <span>Paper</span>
                         </a>
