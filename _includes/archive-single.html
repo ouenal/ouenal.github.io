@@ -12,32 +12,17 @@
   {% assign title = post.title %}
 {% endif %}
 
-<style>
-  .vertical_margin {
-     margin-top: 5px;
-  }
-  .linked_publication_title {
-     color: rgb(19, 82, 39);
-     font-weight: bold;
-     font-size: 20px;
-  }
-  .unlinked_publication_title {
-     color: rgb(120, 120, 120);
-     font-weight: bold;
-     font-size: 20px;
-  }
-  .author_block {
-    font-size: 16px;
-  }
-</style>
+<head>
+  <link rel="stylesheet" href="/assets/css/ozan.css">
+</head>
 
 <div>
   <!-- Title -->
   <p class="vertical_margin"></p>
   {% if post.link %}
-    <a href="{{ post.link }}" class="linked_publication_title" style="text-decoration: none;">{{ title }}</a>
+    <a href="{{ post.link }}" class="linked_title">{{ title }}</a>
   {% else %}
-    <a href="{{ base_path }}{{ post.url }}" rel="permalink" class="unlinked_publication_title" style="text-decoration: none;">{{ title }}</a>
+    <a href="{{ base_path }}{{ post.url }}" rel="permalink" class="unlinked_title">{{ title }}</a>
   {% endif %}
   <!-- Authors -->
   <span class="author_block"><br/>{{ post.authors }}</span>

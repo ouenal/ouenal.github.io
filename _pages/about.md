@@ -17,7 +17,7 @@ News
 <b>2024-05</b> &nbsp; DiAL receives <i>Best Paper Award - Honorable Mention</i> from IEEE RA-L 2023! <br/>
 <b>2023-10</b> &nbsp; ConcreteNet wins the ICCV 2023 <i>Object Localization Challenge</i>! <br/>
 <b>2022-03</b> &nbsp; ScribbleKITTI is accepted to CVPR 2022 as an ORAL paper! <br/>
-<b>2021-05</b> &nbsp; Our work in MedIA 2021 receives the <i>Runner-up Best Paper Award</i>!
+<b>2021-10</b> &nbsp; Our work in MedIA 2021 receives the <i>Runner-up Best Paper Award</i>!
 
 Selected Publications
 ======

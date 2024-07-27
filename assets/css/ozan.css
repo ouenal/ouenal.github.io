@@ -1,0 +1,24 @@
+.vertical_margin {
+    margin-top: 5px;
+}
+.linked_title {
+    color: rgb(19, 82, 39);
+    font-weight: bold;
+    font-size: 20px;
+    text-decoration: none !important;
+}
+.linked_title:hover {
+    text-decoration: underline !important;
+}
+.unlinked_title {
+    color: rgb(100, 100, 100);
+    font-weight: bold;
+    font-size: 20px;
+    text-decoration: none !important;
+}
+.unlinked_title:hover {
+    text-decoration: underline !important;
+}
+.author_block {
+font-size: 16px;
+}
