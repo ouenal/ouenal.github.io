@@ -1,0 +1,206 @@
+---
+layout: empty
+title: "Diswcise Active Learning for LiDAR Semantic Segmentation"
+permalink: /dial/
+author_profile: false
+---
+
+
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Diswcise Active Learning for LiDAR Semantic Segmentation</title>
+  <link rel="icon" href="favicon.ico?v=2" type="image/x-icon"/>
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+  rel="stylesheet">
+
+  <link rel="stylesheet" href="/assets/css/bulma.min.css">
+  <link rel="stylesheet" href="/assets/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="/assets/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="/assets/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="/assets/css/index.css">
+  <link rel="stylesheet" href="/assets/css/ozan.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="/assets/js/fontawesome.all.min.js"></script>
+  <script src="/assets/js/bulma-carousel.min.js"></script>
+  <script src="/assets/js/bulma-slider.min.js"></script>
+  <script src="/assets/js/index.js"></script>
+</head>
+
+
+<body>
+
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+  <div class="navbar-menu">
+    <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
+      <a class="navbar-item" href="https://ouenal.github.io">
+        <span class="icon">
+            <i class="fas fa-home"></i>
+        </span>
+      </a>
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link">
+          Related Research
+        </a>
+        <div class="navbar-dropdown">
+          <a class="navbar-item" href="https://ouenal.github.io/bst/">
+            Bayesian Self-Training for Semi-Supervised 3D Segmentation
+          </a>
+          <a class="navbar-item" href="https://ouenal.github.io/publications/scribblekitti/">
+            Scribble-Supervised LiDAR Semantic Segmentation
+          </a>
+          <a class="navbar-item" href="https://ouenal.github.io/publications/09_wacv2024feature/">
+            2D Feature Distillation for Weakly- and Semi-Supervised 3D Semantic Segmentation
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">Diswcise Active Learning for LiDAR Semantic Segmentation</h1>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="https://ouenal.github.io/" target="_blank">
+                Ozan Unal
+              </a><sup>1</sup> &nbsp;
+              Dengxin Dai<sup>2</sup> &nbsp;
+              Ali Tamer Unal<sup>3</sup> &nbsp;
+              Luc Van Gool<sup>1,4,5</sup>
+            </span>
+          </div>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <sup>1</sup>ETH Zurich &nbsp;
+              <sup>2</sup>Huawei Technologies &nbsp;
+              <sup>3</sup>Boğaziçi University
+              <sup>4</sup>KU Leuven
+              <sup>5</sup>INSAIT
+              <br>
+              IEEE Robotics and Automation Letters 2023
+              <br>
+              Best Paper Award - Honorable Mention
+            </span>
+          </div>
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF link -->
+              <span class="link-block">
+                <a href="https://ieeexplore.ieee.org/abstract/document/10266679" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+              <!-- ArXiv Link -->
+              <span class="link-block">
+                <a href="https://arxiv.org/abs/2309.13276" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Paper abstract -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p> While LiDAR data acquisition is easy, labeling for semantic segmentation remains highly time consuming and must therefore be done selectively. Active learning (AL) provides a solution that can iteratively and intelligently label a dataset while retaining high performance and a low budget. In this work we explore AL for LiDAR semantic segmentation. As a human expert is a component of the pipeline, a practical framework must consider common labeling techniques such as sequential labeling that drastically improve annotation times. We therefore propose a discwise approach (DiAL), where in each iteration, we query the region a single frame covers on global coordinates, labeling all frames simultaneously. We then tackle the two major challenges that emerge with discwise AL. Firstly we devise a new acquisition function that takes 3D point density changes into consideration which arise due to location changes or ego-vehicle motion. Next we solve a mixed-integer linear program that provides a general solution to the selection of multiple frames while taking into consideration the possibilities of disc intersections. Finally we propose a semi-supervised learning approach to utilize all frames within our dataset and improve performance. </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Youtube video -->
+<section class="section hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop has-text-centered">
+      <h2 class="title is-3">Video</h2>
+      <div class="columns is-centered">
+        <div class="publication-video">
+          <iframe src="https://www.youtube.com/embed/u0TliFjH__s?si=WtIRlV06KUseE8th" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Poster -->
+<section class="section hero is-light">
+  <div class="hero-body">
+    <div class="container is-max-desktop has-text-centered">
+      <div class="item is-centered">
+        <h2 class="title is-3">Poster</h2>
+        <img src="/images/dial/poster.png" alt="DiAL Poster"/>
+        <p> DiAL was presented in ICRA 2024. </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--BibTex citation -->
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>
+        @article{unal2023discwise,
+            title={Discwise active learning for lidar semantic segmentation},
+            author={Unal, Ozan and Dai, Dengxin and Unal, Ali Tamer and Van Gool, Luc},
+            journal={IEEE Robotics and Automation Letters},
+            year={2023},
+            publisher={IEEE}
+          }
+    </code></pre>
+  </div>
+</section>
+
+<!-- Paper Footer -->
+<footer class="footer">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column">
+        <div class="content has-text-justified">
+          <p><small><small>
+            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+            You are free to borrow the of this website, we just ask that you link back to this page in the footer. This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </small></small></p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
