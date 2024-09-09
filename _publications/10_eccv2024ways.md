@@ -6,4 +6,5 @@ venue: European Conference on Computer Vision
 abbr: ECCV
 year: 2024
 authors: <b>Ozan Unal</b>, Christos Sakaridis, Suman Saha, Luc Van Gool
+thumbnail: images/concretenet/thumbnail.png
 ---

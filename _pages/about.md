@@ -5,6 +5,7 @@ author_profile: true
 redirect_from: 
   - /about/
   - /about.html
+show_thumbnail: true
 ---
 
 <p style='text-align: justify;'>
@@ -22,16 +23,17 @@ News
 Selected Publications
 ======
 
-{% include base_path %}
-
 {% assign post = site.publications[6] %}
   {% include archive-single.html %}
 
 {% assign post = site.publications[7] %}
+  {% assign post.header.teaser = "images/dial/thumbnail.png" %}
   {% include archive-single.html %}
 
 {% assign post = site.publications[10] %}
+  {% assign post.header.teaser = "images/concretenet/thumbnail.png" %}
   {% include archive-single.html %}
 
 {% assign post = site.publications[11] %}
+  {% assign post.header.teaser = "images/bst/thumbnail.png" %}
   {% include archive-single.html %}

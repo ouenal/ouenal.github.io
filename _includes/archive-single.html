@@ -1,39 +1,36 @@
 {% include base_path %}
 
-{% if post.header.teaser %}
-  {% capture teaser %}{{ post.header.teaser }}{% endcapture %}
-{% else %}
-  {% assign teaser = site.teaser %}
-{% endif %}
-
-{% if post.id %}
-  {% assign title = post.title | markdownify | remove: "<p>" | remove: "</p>" %}
-{% else %}
-  {% assign title = post.title %}
-{% endif %}
+{% assign title = post.title %}
+{% assign thumbnail = post.thumbnail %}
 
 <head>
   <link rel="stylesheet" href="/assets/css/ozan.css">
 </head>
 
-<div>
-  <!-- Title -->
-  <p class="vertical_margin"></p>
-  {% if post.link %}
-    <a href="{{ post.link }}" class="linked_title">{{ title }}</a>
-  {% else %}
-    <a href="{{ base_path }}{{ post.url }}" rel="permalink" class="unlinked_title">{{ title }}</a>
+<p class="vertical_margin"></p>
+
+<div style="display: flex; align-items: center; margin-bottom: 20px;">
+  {% if page.show_thumbnail %}
+    <img src="{{ thumbnail }}" alt="Thumbnail" style="height: 80px; margin-right: 20px;">
   {% endif %}
-  <!-- Authors -->
-  <span class="author_block"><br/>{{ post.authors }}</span>
-  <!-- Venue -->
-  {% if post.abbr and post.award %}
-    <span class="author_block"><br/><i>{{ post.venue }}</i> &#40;{{ post.abbr }}&#41; {{ post.year }}, {{ post.award }}</span>
-  {% else %} {% if post.award %}
-    <span class="author_block"><br/><i>{{ post.venue }}</i> {{ post.year }}, {{ post.award }}</span>
-  {% else%} {% if post.abbr %}
-    <span class="author_block"><br/><i>{{ post.venue }}</i> &#40;{{ post.abbr }}&#41; {{ post.year }}</span>
-  {% else %}
-    <span class="author_block"><br/><i>{{ post.venue }}</i> {{ post.year }}</span>
-  {% endif %}{% endif %}{% endif %}
+  <div>
+    <!-- Title -->
+    {% if post.link %}
+      <a href="{{ post.link }}" class="linked_title">{{ title }}</a>
+    {% else %}
+      <a href="{{ base_path }}{{ post.url }}" rel="permalink" class="unlinked_title">{{ title }}</a>
+    {% endif %}
+    <!-- Authors -->
+    <span class="author_block"><br/>{{ post.authors }}</span>
+    <!-- Venue -->
+    {% if post.abbr and post.award %}
+      <span class="author_block"><br/><i>{{ post.venue }}</i> &#40;{{ post.abbr }}&#41; {{ post.year }}, {{ post.award }}</span>
+    {% else %} {% if post.award %}
+      <span class="author_block"><br/><i>{{ post.venue }}</i> {{ post.year }}, {{ post.award }}</span>
+    {% else%} {% if post.abbr %}
+      <span class="author_block"><br/><i>{{ post.venue }}</i> &#40;{{ post.abbr }}&#41; {{ post.year }}</span>
+    {% else %}
+      <span class="author_block"><br/><i>{{ post.venue }}</i> {{ post.year }}</span>
+    {% endif %}{% endif %}{% endif %}
+  </div>
 </div>

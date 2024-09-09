@@ -7,4 +7,5 @@ abbr: CVPR
 award: ORAL
 year: 2022
 authors: <b>Ozan Unal</b>, Dengxin Dai, Luc Van Gool
+thumbnail: images/scribblekitti/thumbnail.png
 ---
