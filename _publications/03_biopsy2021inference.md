@@ -22,7 +22,7 @@ author_profile: true
             <h1 class="title is-3 publication-title">Inference on Homeostatic Belief Precision</h1>
             <div class="is-size-6 publication-authors">
                 <span class="author-block">
-                    Ozan Unal<sup>1</sup>, Orhun Caner Eren<sup>1</sup>, Göktuğ Alkan<sup>1</sup>, Frederike H Petzschner<sup>1</sup>, Yu Yao<sup>1</sup>, Klaas Enno Stephan<sup>1,2</sup>
+                    Ozan Unal<sup>1</sup>, Orhun Caner Eren<sup>1</sup>, Göktuğ Alkan<sup>1</sup>, Frederike Hermi Petzschner<sup>1</sup>, Yu Yao<sup>1</sup>, Klaas Enno Stephan<sup>1,2</sup>
                 </span>
             </div>
             <div class="is-size-6 publication-authors">
@@ -34,6 +34,12 @@ author_profile: true
                         <a href="https://www.sciencedirect.com/science/article/pii/S0301051121001836" target="_blank"
                         class="external-link button is-normal is-rounded is-dark">
                             <span>Paper</span>
+                        </a>
+                    </span>
+                    <span class="link-block">
+                        <a href="https://github.com/ouenal/inference-on-homeostatic-belief-precision" target="_blank"
+                            class="external-link button is-normal is-rounded is-dark">
+                        <span>Code</span>
                         </a>
                     </span>
                 </div>
