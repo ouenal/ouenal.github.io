@@ -28,7 +28,7 @@ author_profile: true
                 </span>
             </div>
             <div class="is-size-6 publication-authors">
-                <span class="author-block">ETH Zurich <br> MICCAI 2019, ORAL</span>
+                <span class="author-block">ETH Zurich <br> MICCAI 2019 ORAL</span>
             </div>
             <div class="column has-text-centered">
                 <div class="publication-links">
