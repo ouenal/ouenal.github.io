@@ -10,7 +10,7 @@ show_thumbnail: true
 
 <p style='text-align: justify;'>
 I am currently employed as a Computer Vision and Machine Learning
-Research Scientist in the Computer Vision Lab at Huawei Technologies, Zurich. I
+Research Scientist in the Computer Vision Lab at Huawei, Zurich. I
 work on developing memory- and computationally-efficient image
 restoration models for the next-generation smartphones and cloud
 services. <br/>

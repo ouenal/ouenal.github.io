@@ -11,7 +11,7 @@ redirect_from:
 
 Experience
 ======
-<b>2024-06 --</b> &nbsp; Computer Vision and Machine Learning Research Scientist at Huawei Technologies, Zurich
+<b>2024-06 --</b> &nbsp; Computer Vision and Machine Learning Research Scientist at Huawei, Zurich
 
 Education
 ======

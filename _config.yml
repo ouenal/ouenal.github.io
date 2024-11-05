@@ -24,7 +24,7 @@ author:
   avatar           : "avatar.png"
   name             : "Ozan Unal"
   pronouns         : # example: "she/her"  
-  bio              : Computer Vision and Machine Learning Research Scientist at Huawei Technologies, Zurich # "Short biography for the left-hand sidebar"
+  bio              : Computer Vision and Machine Learning Research Scientist at Huawei, Zurich # "Short biography for the left-hand sidebar"
   location         : #"Earth"
   employer         : #""
   uri              : # URL
@@ -34,7 +34,7 @@ author:
   arxiv            : # URL - Update with the correct link to your profile
   googlescholar    : "https://scholar.google.com/citations?user=qKWmINYAAAAJ"
   impactstory      : # URL
-  orcid            : # "https://orcid.org/0000-0002-1121-3883"
+  orcid            : "https://orcid.org/0000-0002-1121-3883"
   semantic         : # URL
   pubmed           : # "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
   researchgate     : # URL
