@@ -1,0 +1,31 @@
+title: Ozan Ünal
+description: Machine learning, computer vision, and image restoration.
+url: https://ouenal.github.io
+baseurl: ""
+repository: ouenal/ouenal.github.io
+timezone: Europe/Zurich
+encoding: utf-8
+theme: null
+
+author:
+  googlescholar: https://scholar.google.com/citations?user=qKWmINYAAAAJ
+  github: ouenal
+  linkedin: ozan-unal
+  orcid: https://orcid.org/0000-0002-1121-3883
+  youtube: UCHzX8aRdoF-tWUARCALucTw
+
+include:
+  - _pages
+  - _projects
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE
+  - README.md
+  - vendor
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+plugins:
+  - jekyll-sitemap

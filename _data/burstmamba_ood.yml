@@ -1,0 +1,64 @@
+- id: "03"
+  label: "Scene 04"
+  source_scene: "0027"
+  crop_center: [824, 240]
+- id: "04"
+  label: "Scene 05"
+  source_scene: "0028"
+  crop_center: [68, 146]
+- id: "05"
+  label: "Scene 06"
+  source_scene: "0029"
+  crop_center: [512, 126]
+- id: "06"
+  label: "Scene 07"
+  source_scene: "0035"
+  crop_center: [857, 92]
+- id: "07"
+  label: "Scene 08"
+  source_scene: "0036"
+  crop_center: [562, 608]
+- id: "08"
+  label: "Scene 09"
+  source_scene: "0037"
+  crop_center: [491, 774]
+- id: "11"
+  label: "Scene 12"
+  source_scene: "0048"
+  crop_center: [457, 915]
+- id: "12"
+  label: "Scene 13"
+  source_scene: "0049"
+  crop_center: [812, 422]
+- id: "13"
+  label: "Scene 14"
+  source_scene: "0050"
+  crop_center: [473, 703]
+- id: "14"
+  label: "Scene 15"
+  source_scene: "0052"
+  crop_center: [749, 607]
+- id: "15"
+  label: "Scene 16"
+  source_scene: "0053"
+  crop_center: [495, 564]
+- id: "16"
+  label: "Scene 17"
+  source_scene: "0065"
+  crop_center: [94, 553]
+- id: "17"
+  label: "Scene 18"
+  source_scene: "0066"
+  crop_center: [498, 820]
+- id: "18"
+  label: "Scene 19"
+  source_scene: "0072"
+  crop_center: [776, 905]
+- id: "19"
+  label: "Scene 20"
+  source_scene: "0074"
+  crop_center: [274, 824]
+- id: "20"
+  label: "Scene 21"
+  source_scene: "0075"
+  crop_center: [713, 813]

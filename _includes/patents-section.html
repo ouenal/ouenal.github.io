@@ -1,0 +1,10 @@
+<div class="section-heading"><h2 id="patents-heading">Patents</h2></div>
+<ol class="paper-list patent-list">
+  {% for post in site.data.patents reversed %}
+  <li class="paper-row">
+    <div class="paper-row-title"><a href="{{ post.link }}">{{ post.title }}</a></div>
+    <div class="paper-row-authors">{{ post.authors }}</div>
+    <div class="paper-row-meta">{{ post.venue }} · {{ post.award }} · {{ post.year }}</div>
+  </li>
+  {% endfor %}
+</ol>

@@ -1,0 +1,149 @@
+---
+- title: Attenuation Imaging with Pulse-Echo Ultrasound Based on an Acoustic Reflector
+  venue: International Conference on Medical Image Computing and Computer-Assisted Intervention
+  abbr: MICCAI
+  award: ORAL · Best Presentation Award
+  year: 2019
+  authors: Richard Rau, <b>Ozan Unal</b>, Dieter Schweizer, Valery Vishnevskiy, Orcun Goksel
+  pdf_url: https://arxiv.org/pdf/1906.11615
+  arxiv_url: https://arxiv.org/abs/1906.11615
+- title: Frequency-Dependent Attenuation Reconstruction with an Acoustic Reflector
+  venue: Medical Image Analysis
+  award: Runner-up Best Paper Award
+  year: 2021
+  authors: Richard Rau, <b>Ozan Unal</b>, Dieter Schweizer, Valery Vishnevskiy, Orcun Goksel
+  pdf_url: https://arxiv.org/pdf/2003.05658
+  arxiv_url: https://arxiv.org/abs/2003.05658
+- title: Improving Point Cloud Semantic Segmentation by Learning 3D Object Detection
+  venue: Winter Conference on Applications of Computer Vision
+  abbr: WACV
+  year: 2021
+  authors: "<b>Ozan Unal</b>, Luc Van Gool, Dengxin Dai"
+  pdf_url: https://openaccess.thecvf.com/content/WACV2021/papers/Unal_Improving_Point_Cloud_Semantic_Segmentation_by_Learning_3D_Object_Detection_WACV_2021_paper.pdf
+  arxiv_url: https://arxiv.org/abs/2009.10569
+- title: Inference on Homeostatic Belief Precision
+  venue: Biological Psychology
+  year: 2021
+  authors: "<b>Ozan Unal</b>, Orhun Caner Eren, Göktuğ Alkan, Frederike H Petzschner, Yu Yao, Klaas Enno Stephan"
+  pdf_url: https://www.tnu.ethz.ch/fileadmin/user_upload/documents/Publications/2021/2021_Unal_Eren_Alkan_Petzschner_Yao.pdf
+  code_url: https://github.com/ouenal/inference-on-homeostatic-belief-precision
+- title: End-To-End Optimization of LiDAR Beam Configuration for 3D Object Detection and Localization
+  venue: IEEE Robotics and Automation Letters
+  year: 2022
+  authors: Niclas Vodisch, <b>Ozan Unal</b>, Ke Li, Luc Van Gool, Dengxin Dai
+  pdf_url: https://arxiv.org/pdf/2201.03860
+  arxiv_url: https://arxiv.org/abs/2201.03860
+  code_url: https://github.com/vniclas/lidar_beam_selection
+- title: Understanding Birds-Eye View of Road Semantics using an Onboard Camera
+  venue: IEEE Robotics and Automation Letters
+  year: 2022
+  authors: Yigit Baran Can, Alexander Liniger, <b>Ozan Unal</b>, Danda Pani Paudel, Luc Van Gool
+  pdf_url: https://arxiv.org/pdf/2012.03040
+  arxiv_url: https://arxiv.org/abs/2012.03040
+  code_url: https://github.com/ybarancan/BEV_feat_stitch
+- title: Scribble-Supervised LiDAR Semantic Segmentation
+  link: "/scribblekitti/"
+  venue: Conference on Computer Vision and Pattern Recognition
+  abbr: CVPR
+  award: ORAL
+  year: 2022
+  authors: "<b>Ozan Unal</b>, Dengxin Dai, Luc Van Gool"
+  selected: true
+  badge: "/images/badges/scribblekitti.png"
+  badge_alt: A snow leopard drawing sparse point-cloud labels, with a CVPR 2022 ribbon
+  pdf_url: https://openaccess.thecvf.com/content/CVPR2022/papers/Unal_Scribble-Supervised_LiDAR_Semantic_Segmentation_CVPR_2022_paper.pdf
+  arxiv_url: https://arxiv.org/abs/2203.08537
+  code_url: https://github.com/ouenal/scribblekitti
+- title: Discwise Active Learning for LiDAR Semantic Segmentation
+  link: "/dial/"
+  venue: IEEE Robotics and Automation Letters
+  award: Best Paper Award - Honorable Mention
+  highlight_award: Runner-up Best Paper Award
+  year: 2023
+  authors: "<b>Ozan Unal</b>, Dengxin Dai, Ali Tamer Unal, Luc Van Gool"
+  selected: true
+  badge: "/images/badges/dial.png"
+  badge_alt: A kingfisher selecting a LiDAR scanning disc, with an IEEE RA-L 2023 ribbon
+  pdf_url: https://arxiv.org/pdf/2309.13276
+  arxiv_url: https://arxiv.org/abs/2309.13276
+- title: LiDAR Meta Depth Completion
+  venue: International Conference on Intelligent Robots and Systems
+  abbr: IROS
+  year: 2023
+  authors: Wolfgang Boettcher, Lukas Hoyer, <b>Ozan Unal</b>, Ke Li, Dengxin Dai
+  pdf_url: https://arxiv.org/pdf/2307.12761
+  arxiv_url: https://arxiv.org/abs/2307.12761
+- title: 2D Feature Distillation for Weakly- and Semi-Supervised 3D Semantic Segmentation
+  venue: Winter Conference on Applications of Computer Vision
+  abbr: WACV
+  year: 2024
+  authors: "<b>Ozan Unal</b>, Dengxin Dai, Lukas Hoyer, Yigit Baran Can, Luc Van Gool"
+  pdf_url: https://openaccess.thecvf.com/content/WACV2024/papers/Unal_2D_Feature_Distillation_for_Weakly-_and_Semi-Supervised_3D_Semantic_Segmentation_WACV_2024_paper.pdf
+  arxiv_url: https://arxiv.org/abs/2311.15605
+- title: Four Ways to Improve Verbo-visual Fusion for Dense 3D Visual Grounding
+  link: "/concretenet/"
+  venue: European Conference on Computer Vision
+  abbr: ECCV
+  year: 2024
+  authors: "<b>Ozan Unal</b>, Christos Sakaridis, Suman Saha, Luc Van Gool"
+  selected: true
+  badge: "/images/badges/concretenet.png"
+  badge_alt: A fox grounding a spoken description in a 3D scene, with an ECCV 2024 ribbon
+  pdf_url: https://www.ecva.net/papers/eccv_2024/papers_ECCV/papers/09749.pdf
+  arxiv_url: https://arxiv.org/abs/2309.04561
+  code_url: https://github.com/ouenal/concretenet
+- title: Bayesian Self-Training for Semi-Supervised 3D Segmentation
+  link: "/bst/"
+  venue: European Conference on Computer Vision
+  abbr: ECCV
+  year: 2024
+  authors: "<b>Ozan Unal</b>, Christos Sakaridis, Luc Van Gool"
+  selected: true
+  badge: "/images/badges/bst.png"
+  badge_alt: An owl examining a point cloud through two lenses, with an ECCV 2024 ribbon
+  pdf_url: https://www.ecva.net/papers/eccv_2024/papers_ECCV/papers/07260.pdf
+  arxiv_url: https://arxiv.org/abs/2409.08102
+- title: 'Scribbles for All: Benchmarking Scribble Supervised Segmentation Across Datasets'
+  venue: Neural Information Processing Systems
+  abbr: NeurIPS
+  year: 2024
+  award: Spotlight
+  authors: Wolfgang Boettcher, Lukas Hoyer, <b>Ozan Unal</b>, Jan Eric Lenssen, Bernt Schiele
+  pdf_url: https://proceedings.neurips.cc/paper_files/paper/2024/file/51cd2b3608d7ae17a9fadcc6e1f68629-Paper-Datasets_and_Benchmarks_Track.pdf
+  arxiv_url: https://arxiv.org/abs/2408.12489
+  code_url: https://github.com/wbkit/Scribbles4All
+  project_url: https://wbkit.github.io/Scribbles4All/
+- title: Fine-Grained Spatial and Verbal Losses for 3D Visual Grounding
+  venue: Winter Conference on Applications of Computer Vision
+  abbr: WACV
+  year: 2025
+  authors: Sombit Dey, <b>Ozan Unal</b>, Christos Sakaridis, Luc Van Gool
+  pdf_url: https://openaccess.thecvf.com/content/WACV2025/papers/Dey_Fine-Grained_Spatial_and_Verbal_Losses_for_3D_Visual_Grounding_WACV_2025_paper.pdf
+  arxiv_url: https://arxiv.org/abs/2411.03405
+  project_url: https://sombit888.github.io/3DG/
+- title: Language-Guided Instance-Aware Domain-Adaptive Panoptic Segmentation
+  venue: Winter Conference on Applications of Computer Vision
+  abbr: WACV
+  year: 2025
+  authors: Elham Amin Mansour, <b>Ozan Unal</b>, Suman Saha, Benjamin Bejar, Luc Van Gool
+  pdf_url: https://openaccess.thecvf.com/content/WACV2025/papers/Mansour_Language-Guided_Instance-Aware_Domain-Adaptive_Panoptic_Segmentation_WACV_2025_paper.pdf
+  arxiv_url: https://arxiv.org/abs/2404.03799
+- title: 'RealDriveSim: A Realistic Multi-Modal Multi-Task Synthetic Dataset for Autonomous Driving'
+  venue: IEEE Intelligent Vehicles Symposium
+  abbr: IV
+  year: 2025
+  authors: Arpit Jadon, Haoran Wang, Phillip Thomas, Michael Stanley, S. Nathaniel Cibik, Rachel Laurat, Omar Maher, Lukas Hoyer, <b>Ozan Unal</b>, Dengxin Dai
+  pdf_url: https://arxiv.org/pdf/2506.16319
+  arxiv_url: https://arxiv.org/abs/2506.16319
+  project_url: https://realdrivesim.github.io/
+- title: Keyframe-Centric State-Space Modeling for Burst Image Super-Resolution
+  link: "/burstmamba/"
+  venue: Special Interest Group on Computer Graphics and Interactive Techniques Asia
+  abbr: SIGGRAPH Asia
+  year: 2026
+  authors: "<b>Ozan Unal</b>, Steven Marty, Dengxin Dai"
+  selected: true
+  badge: "/images/badges/burstmamba.png"
+  badge_alt: A mamba snake restoring photographs, with a SIGGRAPH Asia 2026 ribbon
+  pdf_url: https://arxiv.org/pdf/2503.19634
+  arxiv_url: https://arxiv.org/abs/2503.19634

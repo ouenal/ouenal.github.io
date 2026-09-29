@@ -1,0 +1,39 @@
+<section class="selected-section" aria-labelledby="selected-heading">
+  <div class="section-heading"><h2 id="selected-heading">Highlighted papers</h2></div>
+  <div class="paper-grid">
+    {% assign selected = site.data.publications | where: 'selected', true | reverse %}
+    {% for post in selected %}
+    <article class="paper-card">
+      <a class="badge-link" href="{{ post.link | relative_url }}" aria-label="{{ post.title | escape }} project page">
+        <img class="paper-badge" src="{{ post.badge | relative_url }}" width="240" height="240" alt="{{ post.badge_alt | escape }}" loading="lazy">
+      </a>
+      <div class="card-meta">
+        <div class="card-venue">{{ post.abbr | default: 'IEEE RA-L' }} {{ post.year }}</div>
+        {% if post.award %}<p class="paper-highlight" title="{{ post.award | escape }}">{{ post.highlight_award | default: post.award }}</p>{% endif %}
+      </div>
+      <h3>{{ post.title }}</h3>
+      {% assign card_authors = post.authors | split: ', ' %}
+      <p class="card-authors" title="{{ post.authors | strip_html | escape }}">{% for author in card_authors %}<span>{{ author }}</span>{% unless forloop.last %}, {% endunless %}{% endfor %}</p>
+    </article>
+    {% endfor %}
+  </div>
+</section>
+
+<section id="all-papers" class="all-papers" aria-labelledby="all-heading">
+  <div class="section-heading"><h2 id="all-heading">All papers</h2></div>
+  {% assign years = site.data.publications | reverse | group_by: 'year' %}
+  {% for year in years %}
+  <section class="paper-year" aria-labelledby="year-{{ year.name }}">
+    <h3 id="year-{{ year.name }}">{{ year.name }}</h3>
+    <ol class="paper-list">
+      {% for post in year.items %}
+      <li class="paper-row">
+        <div class="paper-row-title">{% if post.selected %}<img class="paper-marker" src="{{ post.badge | relative_url }}" width="20" height="20" alt="Highlight:" title="Highlighted paper" loading="lazy">{% endif %}{{ post.title }}</div>
+        <div class="paper-row-authors">{{ post.authors }}</div>
+        <div class="paper-row-meta"><span>{{ post.abbr | default: post.venue }} {{ post.year }}</span>{% if post.award %}<span class="paper-highlight">{{ post.award }}</span>{% endif %}<span class="row-links">{% include paper-resource-links.html %}</span></div>
+      </li>
+      {% endfor %}
+    </ol>
+  </section>
+  {% endfor %}
+</section>

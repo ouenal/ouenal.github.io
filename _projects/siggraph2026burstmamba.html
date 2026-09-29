@@ -1,0 +1,265 @@
+---
+layout: null
+title: "Keyframe-Centric State-Space Modeling for Burst Image Super-Resolution"
+permalink: /burstmamba/
+---
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Keyframe-Centric State-Space Modeling for Burst Image Super-Resolution</title>
+  <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/bulma.min.css">
+  <link rel="stylesheet" href="/assets/css/academicons.min.css">
+  <link rel="stylesheet" href="/assets/css/index.css">
+  <link rel="stylesheet" href="/assets/css/burstmamba.css">
+  <script defer src="/assets/js/fontawesome.all.min.js"></script>
+  <script defer src="/assets/js/burstmamba.js"></script>
+</head>
+
+<body>
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-menu is-active">
+    <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
+      <a class="navbar-item" href="/" aria-label="Home">
+        <span class="icon"><i class="fas fa-home"></i></span>
+      </a>
+    </div>
+  </div>
+</nav>
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">Keyframe-Centric State-Space Modeling for Burst Image Super-Resolution</h1>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="/">Ozan Unal</a> &nbsp;
+              Steven Marty &nbsp;
+              Dengxin Dai
+            </span>
+          </div>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">Huawei<br>SIGGRAPH Asia 2026</span>
+          </div>
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <span class="link-block">
+                <a href="https://arxiv.org/pdf/2503.19634" target="_blank"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon"><i class="fas fa-file-pdf"></i></span>
+                  <span>PDF</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a href="https://arxiv.org/abs/2503.19634" target="_blank"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon"><i class="ai ai-arxiv"></i></span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a href="https://drive.google.com/drive/folders/1GQds3ukQ1nXb6geV3vLlH2DgNwZ5bA5_?usp=drive_link" target="_blank"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon"><i class="fas fa-download"></i></span>
+                  <span>Dataset</span>
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <img src="/images/burstmamba/teaser.png" alt="BurstMamba qualitative results and efficiency comparison">
+    </div>
+  </div>
+</section>
+
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Burst image super-resolution (BISR) reconstructs a high-resolution keyframe by aggregating complementary sub-pixel evidence from a short burst of low-resolution frames. Existing methods often process all burst frames with heavy backbones or maintain deep cross-frame interaction throughout the network, leading to redundant computation on non-key frames and limiting scalability with burst length. We propose BurstMamba, a BISR architecture built on a simple principle: allocate most compute to reconstructing the keyframe, and process the burst primarily to extract sub-pixel priors. BurstMamba decouples BISR into a high-capacity keyframe super-resolution stream and a lightweight burst stream that interacts with it only through stage-wise residual injection. To improve burst-to-keyframe transfer, we introduce Gather &rarr; Aggregate &rarr; Scatter (GAS), which uses correspondence only for cross-frame message passing while preserving native-view features through a residual connection, and a wavelet-conditioned state update that biases selective routing toward high-frequency regions. Across SyntheticSR, RealBSR-RAW, and RealBSR-RGB, BurstMamba achieves state-of-the-art results.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section hero" id="method-overview">
+  <div class="hero-body">
+    <div class="container is-max-widescreen has-text-centered">
+      <h2 class="title is-3">Method Overview</h2>
+
+      <div class="burstmamba-method-grid">
+        <figure class="burstmamba-method-figure">
+          <img src="/images/burstmamba/pipeline.png" alt="BurstMamba keyframe and burst processing pipeline">
+          <figcaption>
+            <strong>BurstMamba pipeline.</strong> A high-capacity keyframe stream is paired with a lightweight burst-prior stream through stage-wise residual injection.
+          </figcaption>
+        </figure>
+        <figure class="burstmamba-method-figure">
+          <img src="/images/burstmamba/gas.png" alt="Gather, Aggregate, and Scatter workflow in BurstMamba">
+          <figcaption>
+            <strong>GAS workflow.</strong> Correspondence-aware features are gathered, selectively aggregated, and scattered back to their native views.
+          </figcaption>
+        </figure>
+      </div>
+
+      <div class="content has-text-justified burstmamba-method-copy">
+        <p>
+          BurstMamba follows an asymmetric pipeline: the keyframe receives the high-capacity reconstruction path, while the remaining burst frames are processed by a lightweight stream that extracts compact sub-pixel priors. These priors are injected into the keyframe stream as stage-wise residuals, avoiding the cost of fully reconstructing every frame. Inside the burst stream, Gather &rarr; Aggregate &rarr; Scatter (GAS) uses correspondences only when exchanging information: matched features are gathered into keyframe coordinates, aggregated with bidirectional state-space modeling and wavelet-conditioned routing that emphasizes high-frequency evidence, then scattered back to the native frame coordinates. This preserves view-specific detail while directing the useful burst evidence to the final keyframe reconstruction.
+        </p>
+      </div>
+
+      <div class="burstmamba-contributions" aria-label="BurstMamba contributions">
+        <article class="burstmamba-contribution">
+          <span class="burstmamba-contribution__number" aria-hidden="true">1</span>
+          <h3>Keyframe-centric factorization</h3>
+          <p>Concentrates reconstruction capacity on the keyframe and uses the other frames only to provide compact sub-pixel priors.</p>
+        </article>
+        <article class="burstmamba-contribution">
+          <span class="burstmamba-contribution__number" aria-hidden="true">2</span>
+          <h3>Gather &rarr; Aggregate &rarr; Scatter</h3>
+          <p>Applies correspondence only during cross-frame message passing while retaining native-view features through residual paths.</p>
+        </article>
+        <article class="burstmamba-contribution">
+          <span class="burstmamba-contribution__number" aria-hidden="true">3</span>
+          <h3>Frequency-aware routing</h3>
+          <p>Conditions selective state-space updates on wavelet cues so aggregation prioritizes high-frequency detail useful for super-resolution.</p>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section hero" id="qualitative-ood-comparison">
+  <div class="container is-max-desktop">
+    <div class="has-text-centered">
+      <h2 class="title is-3">Qualitative OOD Comparison</h2>
+      <p class="ood-results-intro has-text-justified">
+        We collected this qualitative out-of-distribution dataset with a Nikon Z9 equipped with a NIKKOR Z 24&ndash;70mm f/2.8 S zoom lens. It emphasizes challenging cases underrepresented in RealBSR-RGB, including vegetation, local motion, and fine repetitive structures. The dataset contains 21 representative crop sequences with burst length <i>L</i>=14, all captured handheld with fixed exposure settings. The complete dataset and all BurstMamba and FBANet results can be downloaded using the Dataset link above.
+      </p>
+    </div>
+
+    <div class="ood-carousel" data-ood-carousel tabindex="0" aria-label="Out-of-distribution qualitative result carousel">
+      <div class="ood-carousel__slides" aria-live="polite">
+        {% for result in site.data.burstmamba_ood %}
+        <article class="ood-carousel__slide" data-carousel-slide{% unless forloop.first %} hidden{% endunless %} aria-hidden="{% unless forloop.first %}true{% else %}false{% endunless %}">
+          <div class="ood-comparison-grid">
+            <figure class="ood-panel">
+              <img
+                class="ood-overview-image"
+                src="/images/burstmamba/results/overview/{{ result.id }}.jpg"
+                alt="{{ result.label }} context crop with the evaluated detail region outlined in red"
+                loading="lazy"
+                decoding="async">
+            </figure>
+
+            <figure class="ood-panel">
+              <div class="image-comparison" data-image-comparison>
+                <img
+                  class="image-comparison__image"
+                  src="/images/burstmamba/results/detail/burstmamba/{{ result.id }}.png"
+                  alt="BurstMamba detail for {{ result.label }}"
+                  loading="lazy"
+                  decoding="async">
+                <div class="image-comparison__reveal" data-comparison-reveal>
+                  <div class="image-comparison__reveal-clip">
+                    <img
+                      class="image-comparison__image"
+                      src="/images/burstmamba/results/detail/keyframe/{{ result.id }}.png"
+                      alt="Keyframe detail for {{ result.label }}"
+                      loading="lazy"
+                      decoding="async">
+                  </div>
+                  <span class="image-comparison__divider" aria-hidden="true"></span>
+                </div>
+                <span class="image-comparison__label image-comparison__label--left">Keyframe</span>
+                <span class="image-comparison__label image-comparison__label--right">BurstMamba</span>
+                <input
+                  class="image-comparison__range"
+                  type="range"
+                  min="0"
+                  max="100"
+                  step="0.1"
+                  value="50"
+                  aria-label="Compare the keyframe and BurstMamba result for {{ result.label }}">
+              </div>
+            </figure>
+          </div>
+        </article>
+        {% endfor %}
+      </div>
+
+      <div class="ood-carousel__controls">
+        <button class="ood-carousel__button" type="button" data-carousel-previous aria-label="Previous result">&lsaquo;</button>
+        <span class="ood-carousel__status" data-carousel-status aria-live="polite">1 / {{ site.data.burstmamba_ood | size }}</span>
+        <button class="ood-carousel__button" type="button" data-carousel-next aria-label="Next result">&rsaquo;</button>
+      </div>
+
+      <div class="ood-carousel__dots" aria-label="Choose a result">
+        {% for result in site.data.burstmamba_ood %}
+        <button
+          class="ood-carousel__dot"
+          type="button"
+          data-carousel-dot
+          aria-label="Show {{ result.label }}"
+          aria-current="{% if forloop.first %}true{% else %}false{% endif %}"></button>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@inproceedings{unal2026burstmamba,
+  author    = {Unal, Ozan and Marty, Steven and Dai, Dengxin},
+  title     = {Keyframe-Centric State-Space Modeling for Burst Image Super-Resolution},
+  booktitle = {SIGGRAPH Asia 2026 Conference Papers},
+  series    = {SA Conference Papers '26},
+  year      = {2026},
+  month     = {December},
+  location  = {Kuala Lumpur, Malaysia},
+  publisher = {Association for Computing Machinery},
+  address   = {New York, NY, USA},
+  isbn      = {979-8-4007-2842-6},
+  doi       = {10.1145/3829340.3842160}
+}</code></pre>
+  </div>
+</section>
+
+<!-- Paper Footer -->
+<footer class="footer">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column">
+        <div class="content has-text-justified">
+          <p><small><small>
+            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a>&nbsp;project page.
+            You are free to borrow the of this website, we just ask that you link back to this page in the footer. This website is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+          </small></small></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+</body>
+</html>

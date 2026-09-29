@@ -1,0 +1,4 @@
+{% if post.pdf_url %}<a href="{{ post.pdf_url }}">PDF</a>{% endif %}
+{% if post.arxiv_url %}<a href="{{ post.arxiv_url }}">arXiv</a>{% endif %}
+{% if post.code_url %}<a href="{{ post.code_url }}">Code</a>{% endif %}
+{% if post.selected %}<a href="{{ post.link | relative_url }}">Project</a><a href="{{ post.link | relative_url }}#BibTeX">BibTeX</a>{% elsif post.project_url %}<a href="{{ post.project_url }}">Project</a>{% endif %}
