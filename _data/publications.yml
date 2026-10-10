@@ -49,7 +49,7 @@
   year: 2022
   authors: "<b>Ozan Unal</b>, Dengxin Dai, Luc Van Gool"
   selected: true
-  badge: "/images/badges/scribblekitti.png"
+  badge: "/images/badges/web/scribblekitti.webp"
   badge_alt: A snow leopard drawing sparse point-cloud labels, with a CVPR 2022 ribbon
   pdf_url: https://openaccess.thecvf.com/content/CVPR2022/papers/Unal_Scribble-Supervised_LiDAR_Semantic_Segmentation_CVPR_2022_paper.pdf
   arxiv_url: https://arxiv.org/abs/2203.08537
@@ -62,7 +62,7 @@
   year: 2023
   authors: "<b>Ozan Unal</b>, Dengxin Dai, Ali Tamer Unal, Luc Van Gool"
   selected: true
-  badge: "/images/badges/dial.png"
+  badge: "/images/badges/web/dial.webp"
   badge_alt: A kingfisher selecting a LiDAR scanning disc, with an IEEE RA-L 2023 ribbon
   pdf_url: https://arxiv.org/pdf/2309.13276
   arxiv_url: https://arxiv.org/abs/2309.13276
@@ -87,7 +87,7 @@
   year: 2024
   authors: "<b>Ozan Unal</b>, Christos Sakaridis, Suman Saha, Luc Van Gool"
   selected: true
-  badge: "/images/badges/concretenet.png"
+  badge: "/images/badges/web/concretenet.webp"
   badge_alt: A fox grounding a spoken description in a 3D scene, with an ECCV 2024 ribbon
   pdf_url: https://www.ecva.net/papers/eccv_2024/papers_ECCV/papers/09749.pdf
   arxiv_url: https://arxiv.org/abs/2309.04561
@@ -99,7 +99,7 @@
   year: 2024
   authors: "<b>Ozan Unal</b>, Christos Sakaridis, Luc Van Gool"
   selected: true
-  badge: "/images/badges/bst.png"
+  badge: "/images/badges/web/bst.webp"
   badge_alt: An owl examining a point cloud through two lenses, with an ECCV 2024 ribbon
   pdf_url: https://www.ecva.net/papers/eccv_2024/papers_ECCV/papers/07260.pdf
   arxiv_url: https://arxiv.org/abs/2409.08102
@@ -143,7 +143,7 @@
   year: 2026
   authors: "<b>Ozan Unal</b>, Steven Marty, Dengxin Dai"
   selected: true
-  badge: "/images/badges/burstmamba.png"
+  badge: "/images/badges/web/burstmamba.webp"
   badge_alt: A mamba snake restoring photographs, with a SIGGRAPH Asia 2026 ribbon
   pdf_url: https://arxiv.org/pdf/2503.19634
   arxiv_url: https://arxiv.org/abs/2503.19634

@@ -5,7 +5,7 @@
     {% for post in selected %}
     <article class="paper-card">
       <a class="badge-link" href="{{ post.link | relative_url }}" aria-label="{{ post.title | escape }} project page">
-        <img class="paper-badge" src="{{ post.badge | relative_url }}" width="240" height="240" alt="{{ post.badge_alt | escape }}" loading="lazy">
+        <img class="paper-badge" src="{{ post.badge | relative_url }}" width="324" height="324" alt="{{ post.badge_alt | escape }}" loading="eager" decoding="async" fetchpriority="low">
       </a>
       <div class="card-meta">
         <div class="card-venue">{{ post.abbr | default: 'IEEE RA-L' }} {{ post.year }}</div>

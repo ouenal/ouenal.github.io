@@ -22,6 +22,7 @@ Open http://127.0.0.1:4000. On Windows, add `--force_polling` if file watching r
 - `_includes/cv-section.html`: public CV titles and dates.
 - `_projects/`: dedicated research project pages.
 - `assets/css/minimal.css` and `assets/js/minimal.js`: homepage styling and animations.
+- `images/badges/*.png`: full-resolution original publication badges. Keep these originals; the homepage uses the 324 × 324 WebP copies in `images/badges/web/` for both highlights and list icons. The copies retain transparency and support the 108-pixel highlights at 3× display density. They load at low priority before Papers opens and are reused by the list icons.
 
 GitHub Pages builds the `main` branch. The previous design remains in Git history; no legacy theme or separate listing pages are part of the current site.
 
